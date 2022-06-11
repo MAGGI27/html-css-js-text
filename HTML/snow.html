@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+  margin: 0;
+  background-color: #3168f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.snowman {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.face {
+  background-color: #ffffff;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: -1rem;
+  justify-content: space-around;
+}
+.eye-left {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 1rem;
+  width: 20px;
+  height: 20px;
+  background-color: #000000;
+  border-radius: 50%;
+}
+.eye-right  {
+    display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 1rem;
+  width: 20px;
+  height: 20px;
+  background-color: #000000;
+  border-radius: 50%;
+}
+.nose {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #db6273;
+  margin-top: -1.5rem;
+}
+.mouth {
+  width: 32px;
+  height: 15px;
+  border-radius: 50%;
+  margin-top: -2rem;
+  border-bottom: 5px solid;
+}
+.body {
+  background-color: #ffffff;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  box-shadow: 0 22px 14px -4px rgba(0, 0, 0, 0.2);
+}
+.body .btn {
+  width: 20px;
+  height: 20px;
+  background-color: #aca9a9;
+  border-radius: 50%;
+}
+.hat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translateX(10px) rotate(10deg);
+  margin-bottom: -1.7rem;
+  z-index: 9;
+}
+.sq {
+  width: 100px;
+  height: 50px;
+  background-color: #000000;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.ribbon {
+  width: 100px;
+  background-color: #da5c6e;
+  height: 15px;
+}
+.cr {
+  width: 150px;
+  height: 10px;
+  background-color: #000000;
+  border-radius: 10px;
+}
+.left-hand {
+  position: absolute;
+  left: -12px;
+  top: 0;
+  height: 157px;
+  z-index: -1;
+  border-radius: 50%;
+  width: 46px;
+  transform: rotate(39deg);
+  background-color: #ffffff;
+}
+.right-hand {
+  position: absolute;
+  right: -12px;
+  top: 0;
+  height: 157px;
+  z-index: -1;
+  border-radius: 50%;
+  width: 46px;
+  transform: rotate(-39deg);
+  background-color: #ffffff;
+}
+
+.mustache {
+  position: absolute;
+  width: 85px;
+  height: 40px;
+  top: 59px;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 1;
+}
+
+.mustache-hair {
+  position: absolute;
+  width: 100px;
+  background: var(--black);
+  height: 2px;
+}
+
+.mustache-left-hair {
+  left: -100px;
+}
+
+.mustache-left-hair:nth-child(1) {
+  top: 0;
+  transform: rotate(15deg);
+  transform-origin: 100%;
+}
+
+.mustache-left-hair:nth-child(2) {
+  top: 50%;
+  transform: translate(-3px, -40%) rotate(2deg);
+  transform-origin: 100%;
+}
+.mustache-left-hair:nth-child(3) {
+  transform: rotate(-10deg) translate(1px, 2px);
+  bottom: 0%;
+  transform-origin: 100%;
+}
+
+.mustache-right-hair {
+  right: -100px;
+}
+
+.mustache-right-hair:nth-child(4) {
+  top: 0;
+  transform: rotate(-15deg);
+  transform-origin: 0%;
+}
+
+.mustache-right-hair:nth-child(5) {
+  top: 50%;
+  transform: translate(8px, -40%) rotate(-2deg);
+  transform-origin: 0%;
+}
+.mustache-right-hair:nth-child(6) {
+  transform: rotate(10deg);
+  bottom: 0%;
+  transform-origin: 0%;
+}
+
+
+        </style>
+    </head>
+    <body>
+        <div class="snowman">
+            <div class="hat">
+                <div class="sq"></div>
+                <div class="ribbon"></div>
+            <div class="cr"></div>
+            </div>
+        <div class="face">
+            <div class="eye-left"></div>
+            <div class="eye-right"></div>
+            <div class="moustache"></div>
+            
+        </div>
+        <div class="nose"></div> 
+        <div class="mouth"></div>
+        </div>
+        <div class="body">
+            <div class="btn"></div>
+            <div class="btn"></div>
+            <div class="btn"></div>
+            <div class="left-hand"></div>
+            <div class="right-hand"></div>
+            </div>
+        </div>
+    </body>
+</html>

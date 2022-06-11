@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>junkook flip </title>
+    <style>
+       *{
+           box-sizing: border-box;
+       }
+       body{
+           font-family: sans-serif;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           height: 200vh;
+           overflow-wrap: normal;
+           overflow: hidden;
+           margin: 0%;
+           background: #f9f9f9;
+       }
+       .container{
+           display: flex;
+           width: 100vh;
+           height: 100vh;
+       }
+       .card{background-size: auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        border-radius: 50px;
+        color: #f9f9f9;
+        cursor: pointer;
+        width: 100%;
+        flex: 0.5;
+        margin: 10px;
+        position: relative;
+        transition: flex 0.7s ease-in;
+        -webkit-transition: all 700ms ease-in;
+       }
+       .card h4{
+           font-size: 40px;
+           position: absolute;
+           bottom: 30px;
+           left: 20px;
+           opacity: 20px;
+       }
+       .card.initial{
+           flex: 10;
+
+       }
+       .card.initial h4{
+           opacity: 10px;
+           transition: 0.5s ease-in 0.3s;
+       }
+       @media(max-width:500px){
+           .container{
+               width:100vh;
+               height: 100vh;
+           }
+           .card:nth-of-type(4),
+           .card:nth-of-type(5){
+               display:inline;
+           }         
+
+       }
+           
+       
+
+    </style>
+   </head>
+<body>
+    <div class="container">
+        <div class="card initial" style="background-image: url('images\jk1.jpeg');">
+        <h4>jeon junkook  </h4>
+        </div>
+        <div class="card" style="background-image: url('images\jk2.jpeg');">
+        <h4>jeon junkook</h4>
+        </div>
+        <div class="card" style="background-image: url('images\jk3.jpeg');">
+        <h4>jeon jungkook</h4>
+        </div>
+        <div class="card" style="background-image: url('images\jk4.jpeg');">
+        <h4>jeon jungkook</h4>
+        </div>
+        <div class="card" style="background-image: url('images\jk5.jpeg');">
+        <h4>jeon jungkook</h4>
+        </div>
+        <div class="card" style="background-image: url('images\jk6.jpeg');">
+            <h4>jeon jungkook</h4>
+            </div>
+            <div class="card" style="background-image: url('images\jk7.jpeg');">
+                <h4>jeon jungkook</h4>
+                </div>
+                <div class="card" style="background-image: url('images\jk8.jpeg');">
+                    <h4>jeon jungkook</h4>
+                    </div>
+                 </div>
+                 
+    
+</body>
+</html>

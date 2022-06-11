@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        
+        *{
+            background-image: linear-gradient(to bottom, #EA52F8, #0066FF);
+        }
+        body{
+            --text-color: rgb(11, 54, 246);
+            --bg-color: hsl(0 0% 100%);
+            --bg-size: 200px;
+            
+            display: grid;
+            place-items: center;
+            grid-template-areas: body;
+            overflow: hidden;
+            font-family: "Dela Gothic One" ,sans-serif;
+           
+
+        }
+        body::before{
+            --size: 50vw;
+            grid-area: body;
+            content:"";
+            inline-size: var(--size);
+            block-size: var(--size);
+            background-size: var(--bg-size);
+            background-repeat: repeat;
+            opacity: 0.5;
+            background-color: linear-gradient(#0F3443 #34E89E);
+            animation: bg 6s linear infinite;
+
+        }
+        
+        .text{
+            grid-area: body;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            font-size: clamp(1em, 10vmin,5em);
+        }
+        .head span{
+            display: block;
+            text-transform: uppercase;
+
+        }
+        .head span.fill{
+            color: var(--text-color);
+        }
+        .head span:not(.fill){
+            --stroke: min(0.25vmin,2px) var(--text-color);
+            color: var(--bg-color);
+            -webkit-text-stroke: var(--stroke);
+            text-stroke: var(--stroke);
+        }
+        .subhead{
+            position:relative;
+            margin-block-start: 1rem;
+            margin-inline-start: auto;
+            font-size: 0.428em;
+            color:var(--text-color);
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1 class="text" aria-label="DHANAYAWAD!!">
+        <span class="head" aria-hidden="true">
+        <span class="fill">DHANAYAWAD</span>
+        <span>DHANAYAWAD</span>
+        <span>DHANAYAWAD</span>
+        <span class="fill">DHANAYAWAD</span>
+        <span><em>DHANAYAWAD</em></span>
+        <span>DHANAYAWAD</span>
+        <span class="fill">DHANAYAWAD</span>
+    </span>
+    <span class="subhead" aria-hidden="true"> for jo samzana samz le :) :)</span>
+    </h1>
+    
+
+    
+</body>
+</html>

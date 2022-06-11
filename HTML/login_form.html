@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+</head>
+<body>
+    <div class="container">
+        <form method="get" action="#">
+            <div>
+                <label>Email<input type="email" name="email" required></label>
+                <label>Password<input type="password" name="password" required></label>
+                <button type="submit" class="btn">Submit</button>
+            </div>
+        </form>
+    </div>
+    <?php
+        $email=$_GET['email'];
+        $pass=$_GET['password'];
+        if($email='Gunjita' && $pass=$_GET['password'])
+        {
+            echo "<script>alert('Succesfull Login')</script>";
+        }
+    ?>
+</body>
+</html>

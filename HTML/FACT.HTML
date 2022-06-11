@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>factorial of a no.</title>
+    </head>
+    <body>
+        <script>
+            function fact(n){
+                if(n == 0 || n == 1){
+                    return 1;
+                    <!--recursion_case-->
+                } else{
+                    return n*fact(n-1);
+                }
+            }
+            var n = 7;
+            result = fact(n)
+            console.log (result);
+                
+        </script>
+    </body>
+</html>

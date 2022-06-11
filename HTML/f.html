@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            font-family: monospace;
+            color: rgb(169, 45, 222);
+        }
+        h4{
+            font-weight: 600;
+        }
+        .container{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            flex-direction: column;
+        }
+        .box{
+            width: 300px;
+            height: 400px;
+            font-size: 20px;
+            padding: 40px 40px;
+            background: #FC0412;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.20);
+            border-radius: 40px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"><h4>sign up</h4>
+        <div class="user">
+            <i class="user1"></i>
+            <input type="text" name="username" id="username" placeholder="full name"/>
+            <i class="user2"></i>
+            <input type="text" name="username" id="username" placeholder="email address"/>
+            <i class="user3"></i>
+            <input type="password" name="password" id="password" placeholder="password"/>
+            <i class="user4"></i>
+            <input type="password" name="password" id="password" placeholder="confirm password"/>
+        </div>
+        <div class="login_button">
+            <button class="button">submit</button>
+            <p class="signup">already have an account<span>login in</span></p>
+        </div>
+        </div>
+    </div>
+    
+</body>
+</html>
